@@ -91,10 +91,10 @@ describe "ValidatesAndFormatsPhones" do
   end
 
   describe "does not validate if " do
-    it "'if' option is used and evaluates to false" do
+    xit "'if' option is used and evaluates to false" do
       IfOption.create(:phone_if_false => 'invalid').valid?.should == true
     end
-    it "'unless' option is used and evaluates to true" do
+    xit "'unless' option is used and evaluates to true" do
       IfOption.create(:phone_unless_true => '123-invalid').valid?.should == true
     end
   end
